@@ -21,7 +21,7 @@ export default function AboutPage() {
         {/* Información personal */}
         <div className="w-full md:w-2/3 md:pl-6 text-center md:text-left">
           <p className="text-lg text-gray-700 mb-4">
-            Soy un desarrollador web especializado en <span className="font-semibold text-gray-900">[Next]</span>. Tengo varios años de experiencia trabajando con tecnologías modernas como <span className="font-semibold text-gray-900">React, Next.js, Tailwind CSS</span> y más.
+            Soy un desarrollador web especializado en <span className="font-semibold text-gray-900">[Next, Vue, Angular, SpringBoot y Nest]</span>. Tengo varios años de experiencia trabajando con tecnologías modernas como <span className="font-semibold text-gray-900">React, Next.js, Tailwind CSS</span> y más.
           </p>
 
           <p className="text-lg text-gray-700 mb-4">
