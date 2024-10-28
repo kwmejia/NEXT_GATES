@@ -1,0 +1,24 @@
+@mixin wh-fijo ($w, $h){
+    min-width: $w;
+    min-height: $h;
+    max-width: $w;
+    max-height: $h;
+}
+
+@for $i from 1 through 200 {
+    .w-#{$i} {
+        width: $i+px !important;
+    }
+
+    .h-#{$i} {
+        height: $i+px !important;
+    }
+
+    .f-#{$i}{
+        font-size: $i+px !important;
+    }
+
+    .gap-#{$i}{
+        gap: $i+px !important;
+    }
+}

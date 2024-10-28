@@ -16,6 +16,9 @@ export default function SectionsLayout({ children }: { children: React.ReactNode
         <div className="container mx-auto text-center">
           <p>© 2024 Mi Portafolio | Secciones Especiales</p>
         </div>
+        
+        
+
       </footer>
     </div>
   );

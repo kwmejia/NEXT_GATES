@@ -1,0 +1,25 @@
+@import './base/variables';
+@import './base/fonts';
+@import './base/mixins';
+
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient( rgb(192, 132, 252) ,rgb(236, 72, 153), rgb(239, 68, 68) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
