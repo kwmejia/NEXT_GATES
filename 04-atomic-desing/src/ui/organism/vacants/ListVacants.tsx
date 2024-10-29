@@ -2,20 +2,25 @@ import './card.scss'
 import VacantsMolecule from "@/ui/molecules/vacants/VacantsMolecule";
 import React from "react";
 import Pagination from "./Pagination";
+import { IGetCompaniesRespone } from '@/app/model/company.model';
 
 interface IProps {
-  data: { title: string; company: string }[];
+  data: IGetCompaniesRespone;
 }
 export default function ListVacants({ data }: IProps) {
   return (
     <VacantsMolecule>
-      {data.map((vacant, index) => (
+      <div className="center">
+      {data.content.map((company, index) => (
         <div className="card" key={index}>
-          <p>{vacant.title}</p>
-          <p>{vacant.company}</p>
+          <p>{company.name}</p>
+          <p>{company.location}</p>
+          <p>{company.contact}</p>
         </div>
       ))}
-      <Pagination />
+
+      </div>
+      <Pagination data={data} />
 
     </VacantsMolecule>
   );

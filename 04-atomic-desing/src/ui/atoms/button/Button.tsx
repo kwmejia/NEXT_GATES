@@ -1,8 +1,18 @@
-import React from 'react'
-import './button.scss'
+import React from "react";
+import "./button.scss";
 
-export default function Button({children}: {children: React.ReactNode}) {
+export default function Button({
+  children,
+  onClick,
+  disabled = false,
+}: {
+  children: React.ReactNode;
+  onClick: any;
+  disabled?: boolean;
+}) {
   return (
-    <button className='f-18'>{children}</button>
-  )
+    <button disabled={disabled} onClick={onClick} className="f-18">
+      {children}
+    </button>
+  );
 }
