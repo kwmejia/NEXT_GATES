@@ -1,4 +1,4 @@
-const defaultBaseUrl = "https://vacantsbackendgates-production.up.railway.app/api/v1"
+const defaultBaseUrl = "https://beautysalongates-production.up.railway.app/api/v1"
 
 export class HttpClient {
   private baseUrl : string;
@@ -16,7 +16,7 @@ export class HttpClient {
   private async handleResponse(response: Response){
     if (!response.ok) {
       const errorData = await response.json();
-      throw new Error(errorData.message || "Ocurrio un error en la peticion")
+      throw errorData;
     }
     return await response.json();
   }
