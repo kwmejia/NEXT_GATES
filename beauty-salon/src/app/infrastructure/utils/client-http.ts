@@ -8,8 +8,10 @@ export class HttpClient {
   }
 
   private async getHeader() {
+    //si esta autenticado
     return {
       "Content-Type": "application/json",
+      // "Autorizaiton": "Berarer token"
     }
   }
 
